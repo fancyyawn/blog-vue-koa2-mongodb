@@ -5,7 +5,7 @@ const router = new Router();
 const dratfs = require('./drafts')
 
 router.get('/', async(ctx)=>{
-    ctx.body = 'hello'
+    ctx.redirect('/web/index.html')
 });
 
 router.use('/drafts', dratfs.routes())
